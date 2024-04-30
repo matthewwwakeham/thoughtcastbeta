@@ -20,6 +20,10 @@ const auth = getAuth(app);
 
 const secretContent = document.querySelector("#secretContent");
 const signOutButton = document.querySelector("#signOutButton");
+const profileButton = document.querySelector("#profileButton");
+
+const hamMenu = document.querySelector(".ham-menu");
+const offScreenMenu = document.querySelector(".off-screen-menu");
 
 const checkAuthState = () => {
     onAuthStateChanged(auth, user => {
@@ -33,6 +37,15 @@ const checkAuthState = () => {
         }
     });
 };
+
+hamMenu.addEventListener("click", () => {
+    hamMenu.classList.toggle("active");
+    offScreenMenu.classList.toggle("active");
+  });
+
+profileButton.addEventListener("click", () => {
+    window.location.href = "profile.html";
+  });
 
 const userSignOut = async () => {
     await signOut(auth);
