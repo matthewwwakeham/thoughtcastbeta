@@ -19,8 +19,13 @@ const auth = getAuth(app);
 
 const userEmail = document.querySelector("#userEmail");
 const userPassword = document.querySelector("#userPassword");
-const signUpButton = document.querySelector("#signUpButton");
 const signInButton = document.querySelector("#signInButton");
+
+const createAccount = document.querySelector("#createAccount");
+
+createAccount.addEventListener("click", () => {
+    window.location.href = "register.html";
+  });
 
 const userSignIn = async () => {
     const signInEmail = userEmail.value;
