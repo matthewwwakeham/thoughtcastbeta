@@ -8,16 +8,15 @@
     </head>
     <body>
     <div id="authForm">
-        <input type="email" placeholder="Email" id="userEmail">
-        <input type="password" placeholder="Password" id="userPassword"> 
-        <button id="signInButton">Sign In</button> 
+        <input type="email" placeholder="Email" id="userEmail" required>
+        <input type="password" placeholder="Password" id="userPassword" required> 
+        <button id="signInButton">Sign In</button>
+        <div id="links"><a href="reset.html">Forgot your password?</a></div>
+        <p>or</p>
+        <button id="createAccount">Create Account</button>
     </div>
 
     <footer>
-        <div class="links">
-            <p><a href="reset.html">Forgot your password?</a></p>
-            <p>Don't have an account? <a href="register.html">Register here</a>.</p>
-        </div>
     </footer>
 
     <script type="module" src="static/index.js"></script>
