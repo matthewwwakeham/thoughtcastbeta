@@ -8,10 +8,10 @@
     </head>
     <body>
     <div id="authForm">
-        <input type="username" placeholder="Username" id="displayName">
-        <input type="email" placeholder="Email" id="userEmail">
-        <input type="password" placeholder="Password" id="userPassword">
-        <input type="password" placeholder=" Confirm Password" id="confirmPassword">
+        <input type="username" placeholder="Username" id="displayName" required maxlength="25" minlength="4">
+        <input type="email" placeholder="Email" id="userEmail" required>
+        <input type="password" placeholder="Password" id="userPassword" required minlength="6">
+        <input type="password" placeholder=" Confirm Password" id="confirmPassword" required>
         <button id="signUpButton">Sign Up</button>  
     </div>
 
