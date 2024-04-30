@@ -8,14 +8,25 @@
     </head>
     <body>
         
-    <div id="secretContent">
+    <div id="secretContent"></div> 
            
-        <div id="userSection">
-        <div id="userDisplayName"></div>
-        <button id="signOutButton">Sign Out</button>
-        </div>
+        <div class="off-screen-menu">
+            <ul>
+              <li><button id="profileButton">Your Profile</button></li>
+              <li><button id="signOutButton">Sign Out</button></li>
+            </ul>
+          </div>
+      
+          <nav>
+            <div class="ham-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </nav>
             
         <div class="column left">
+            <div id="userDisplayName"></div>
             Left side
         </div>
 
@@ -23,7 +34,7 @@
             Right side
         </div>
      
-    </div> 
+    
 
 
     <script type="module" src="static/dashboard.js"></script>
