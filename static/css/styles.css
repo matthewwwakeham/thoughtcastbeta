@@ -32,6 +32,7 @@ input[type="text"],
 input[type="email"],
 input[type="text"],
 input[type="password"],
+button[id="createAccount"],
 button[id="resetButton"],
 button[id="signUpButton"],
 button[id="signInButton"] {
@@ -63,6 +64,7 @@ input[type="password"]:focus {
     outline: none;
 }
 
+button[id="createAccount"],
 button[id="resetButton"],
 button[id="signUpButton"],
 button[id="signInButton"] {
@@ -74,19 +76,37 @@ button[id="signInButton"] {
     font-size: 16px;
 }
 
+#links {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+#links a {
+    z-index: 1;
+    color: #cccccc;
+    text-decoration: none;
+}
+
+#links a:hover {
+    z-index: 1;
+    text-decoration: underline;
+}
+
+.links {
+    text-align: center;
+}
+
+.links a {
+    z-index: 1;
+    color: #cccccc;
+    text-decoration: none;
+}
+
+.links a:hover {
+    z-index: 1;
+    text-decoration: underline;
+}
+
 footer {
     text-align: center;
     }
-    
-    .links {
-        a {
-            z-index: 1;
-            color: #cccccc;
-            text-decoration: none;
-        }
-        
-        a:hover {
-            z-index: 1;
-            text-decoration: underline;
-        }
-}
