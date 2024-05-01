@@ -76,6 +76,7 @@ ul {
 }
 .off-screen-menu.active {
     right: 0;
+    border-left: 1px solid #9000ff; 
 }
 
 nav {
