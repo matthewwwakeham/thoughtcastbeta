@@ -21,6 +21,7 @@ const auth = getAuth(app);
 const secretContent = document.querySelector("#secretContent");
 const signOutButton = document.querySelector("#signOutButton");
 const profileButton = document.querySelector("#profileButton");
+const dashButton = document.querySelector("#dashButton");
 
 const hamMenu = document.querySelector(".ham-menu");
 const offScreenMenu = document.querySelector(".off-screen-menu");
@@ -29,9 +30,6 @@ const checkAuthState = () => {
     onAuthStateChanged(auth, user => {
         if(user) {
             secretContent.style.display = "block";
-            const displayName = user.displayName;
-            const userDisplayNameElement = document.getElementById('userDisplayName');
-            userDisplayNameElement.innerText = `Welcome, ${displayName}!`;
         } else{
             secretContent.style.display = 'none';
         }
@@ -41,6 +39,10 @@ const checkAuthState = () => {
 hamMenu.addEventListener("click", () => {
     hamMenu.classList.toggle("active");
     offScreenMenu.classList.toggle("active");
+  });
+
+dashButton.addEventListener("click", () => {
+    window.location.href = "dashboard.html";
   });
 
 profileButton.addEventListener("click", () => {
