@@ -25,6 +25,16 @@ ul {
     list-style: none;
 }
 
+#dashButton {
+    background: none;
+    border: none;
+    padding-bottom: 25px;
+    font: inherit;
+    color: white; /* or any color you prefer for links */
+    text-decoration: none;
+    cursor: pointer;
+}
+
 #profileButton {
     background: none;
     border: none;
@@ -39,7 +49,7 @@ ul {
 #signOutButton {
     background: none;
     border: none;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
     font: inherit;
     color: white; /* or any color you prefer for links */
     text-decoration: none;
