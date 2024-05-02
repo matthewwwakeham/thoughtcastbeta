@@ -43,4 +43,13 @@ const userSignIn = async () => {
         })
 }
 
+const handleKeyPress = (event) => {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        userSignIn();
+    }
+};
+
+userPassword.addEventListener("keypress", handleKeyPress);
+
 signInButton.addEventListener('click', userSignIn);
