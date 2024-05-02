@@ -51,7 +51,7 @@ ul {
     border: none;
     padding-bottom: 0px;
     font: inherit;
-    color: white; /* or any color you prefer for links */
+    color: white;
     text-decoration: none;
     cursor: pointer;
 }
@@ -74,9 +74,10 @@ ul {
     font-size: 2rem;
     transition: .3s ease;
 }
+
 .off-screen-menu.active {
     right: 0;
-    border-left: 1px solid #9000ff; 
+    border-left: 1px solid #9000ff;
 }
 
 nav {
@@ -131,4 +132,29 @@ nav {
 .ham-menu.active span:nth-child(3) {
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.searchContent {
+    padding-top: 5px;
+}
+
+input[type="text"] {
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    background-color: #121212;
+    color: white;
+    width: 500px;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    display: block;
+    margin: 0 auto 10px;
+    color: #ffffff;
+}
+
+input[type="text"]:focus {
+    border-color: #9000ff;
+    border-radius: 4px;
+    outline: none;
+    color: white;
 }
